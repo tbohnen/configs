@@ -19,19 +19,12 @@
      ruby
      markdown
      fsharp
-     company-mode
-     twittering-mode
-     neotree
-     fsharp-mode
-     csharp-mode
-     omnisharp
-     elixir-mode
-     irc
+     csharp
+     elixir
      osx
      ;;python
      org
-     org-mode
-     my_layers
+     org
      shell
      auto-completion
      emacs-lisp
@@ -80,14 +73,9 @@
 (defun dotspacemacs/init ()
   (eval-after-load 'company
     '(add-to-list 'company-backends 'company-omnisharp))
-  (add-to-list 'load-path "~/.emacs.d/private/nunit-results")
   (add-to-list 'load-path "~/.emacs.d/private/emacs-modules")
   ;;(add-hook 'after-init-hook 'global-company-mode)
   (add-hook 'elixir-mode-hook 'alchemist-mode)
-
-  (require 'nunit-results)
-  (require 'nunit)
-
 
   "Initialization function.
 This function is called at the very startup of Spacemacs initialization
