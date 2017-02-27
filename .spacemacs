@@ -246,6 +246,7 @@ layers configuration."
        (setq typescript-indent-level 2)))
   (spacemacs/set-leader-keys "[tf" 'mocha-test-file)
   (spacemacs/set-leader-keys "[tp" 'mocha-test-project)
+  (spacemacs/set-leader-keys "[ti" 'mocha-test-at-point)
  )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -323,3 +324,20 @@ layers configuration."
 ;;  ;; If there is more than one, they won't work right.
 ;;  '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
 ;;  '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(safe-local-variable-values
+   (quote
+    ((mocha-options . "--compilers :./tools/babel-setup.js --recursive")
+     (mocha-environment-variables . "NODE_ENV=test")
+     (elixir-enable-compilation-checking . t)
+     (elixir-enable-compilation-checking)))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
