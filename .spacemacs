@@ -247,6 +247,7 @@ layers configuration."
   (spacemacs/set-leader-keys "[tf" 'mocha-test-file)
   (spacemacs/set-leader-keys "[tp" 'mocha-test-project)
   (spacemacs/set-leader-keys "[ti" 'mocha-test-at-point)
+  (setq-default js2-basic-offset 2)
  )
 
 ;; Do not write anything past this comment. This is where Emacs will
