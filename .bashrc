@@ -21,3 +21,5 @@ SSH_ENV=$HOME/.ssh/environment
 #fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH=$PATH:~/.fabric8/bin
+export GOPATH=~/source/go
