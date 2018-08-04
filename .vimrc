@@ -65,8 +65,8 @@ let g:Powerline_symbols = 'fancy'
 
 let g:rspec_command = 'call SendToTmux(" rspec {spec}\n")'
 
-set t_Co=256
-colorscheme grb256
+"set t_Co=256
+"colorscheme grb256
 
 autocmd VimEnter * NERDTree
 
@@ -142,3 +142,5 @@ map <Leader>tpw :!tmux previous-window<CR>
 "set spell spelllang=en_gb
 set number
 set relativenumber"
+
+autocmd filetype crontab setlocal nobackup nowritebackup
